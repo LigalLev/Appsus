@@ -6,6 +6,7 @@ export const utilService = {
     padNum,
     getDayName,
     getMonthName,
+    getTimeStamp
 }
 
 function makeId(length = 6) {
@@ -62,6 +63,8 @@ function getMonthName(date) {
 }
 
 function getTimeStamp(date){
-    date = new Date(date)
-    console.log('date:', date)
+    date = new Date()
+    // var timestamp = date.getTime(date)
+    // console.log('timestamp:', timestamp)
+    return date.getTime()
 }
