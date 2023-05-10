@@ -30,6 +30,7 @@ export function NoteIndex() {
             {/* <button><Link to="/note/edit">Creat note</Link></button> */}
             <NoteList notes={notes} onRemoveNote={onRemoveNote} />
             <h1>basa!</h1>
+            <h1>sababa!</h1>
 
         </section>
     )
