@@ -1,6 +1,6 @@
 
 import { utilService } from '../../../services/util.service.js'
-import { storageService as asyncStorageService } from '../../../services/async-storage.service.js'
+import { asyncStorageService } from '../../../services/async-storage.service.js'
 import { storageService} from '../../../services/storage.service.js'
 
 
@@ -89,6 +89,13 @@ function _createMails() {
             from: 'momo@momo.com',
             to: 'user@appsus.com'
         }]
+        storageService.saveToStorage(MAIL_KEY, mails)
         return mails
     }
 }
+
+// function _createMail() {
+//     const mail = getEmptyMail()
+//     mail.id = utilService.makeId()
+//     return mail
+// }
