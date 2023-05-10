@@ -1,7 +1,7 @@
 import { MailPreview } from "./mail-preview.jsx"
 
-export function MailList({mails, onRemoveMail}) {
-    
+export function MailList({ mails, onRemoveMail }) {
+
 
     // const mails = [{
     //     id: 'e101',
@@ -21,22 +21,16 @@ export function MailList({mails, onRemoveMail}) {
     //     sentAt: 1551133930594,
     //     removedAt: null,
     //     from: 'momo@momo.com',
+
     //     to: 'user@appsus.com'
     // }]
-    return <ul className="mail-list">
-        {mails.map(mail =>
-            <li key={mail.id}>
-                
-                <MailPreview mail={mail} onRemoveMail={onRemoveMail}/>
-                <section>
-                        {/* <button onClick={() => onRemoveMail(mail.id)} >Remove Mail</button> */}
-                        {/* <button><Link to={`/mail/${mail.id}`} >Details</Link ></button>
-                        <button><Link to={`/mail/edit/${mail.id}`} >Edit</Link></button> */}
-
-                    </section>
-            </li>
-        )}
-    </ul>
+    return <table className="mail-list">
+        <tbody>
+            {mails.map(mail =>
+                <MailPreview mail={mail} onRemoveMail={onRemoveMail} key={mail.id} />
+            )}
+        </tbody>
+    </table>
 
 }
 
