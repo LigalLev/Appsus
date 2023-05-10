@@ -29,6 +29,7 @@ export function NoteIndex() {
         <section className="note-index">
             {/* <button><Link to="/note/edit">Creat note</Link></button> */}
             <NoteList notes={notes} onRemoveNote={onRemoveNote} />
+            <h1>basa!</h1>
 
         </section>
     )
