@@ -89,6 +89,13 @@ function _createMails() {
             from: 'momo@momo.com',
             to: 'user@appsus.com'
         }]
+        storageService.saveToStorage(MAIL_KEY, mails)
         return mails
     }
 }
+
+// function _createMail() {
+//     const mail = getEmptyMail()
+//     mail.id = utilService.makeId()
+//     return mail
+// }
