@@ -60,3 +60,8 @@ function getMonthName(date) {
     ]
     return monthNames[date.getMonth()]
 }
+
+function getTimeStamp(date){
+    date = new Date(date)
+    console.log('date:', date)
+}
