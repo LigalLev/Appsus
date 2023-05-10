@@ -24,7 +24,7 @@ export function MailList() {
     return <ul className="mail-list">
         {mails.map(mail =>
             <li key={mail.id}>
-                haaa
+                
                 <MailPreview mail={mail} />
                 {/* <section>
                         <button onClick={() => onRemoveMail(mail.id)} >Remove Mail</button>
