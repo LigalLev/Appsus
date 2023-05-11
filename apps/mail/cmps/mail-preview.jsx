@@ -11,7 +11,7 @@ export function MailPreview({ mail, onRemoveMail }) {
     }
     const fontStyle =  getMailFontWeight()
 
-    const sentAt = mail.sentAt.split(',')[0]
+    const sentAt = mail.sentAt.split(',')[0] 
     return (
         <Link to={`/mail/${mail.id}`}> 
         <div className="mail-preview">
