@@ -1,1 +1,40 @@
  /* mail index  */
+ .mail-compose-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    height: 500px;
+    width: 500px;
+    background-color: aliceblue;
+    
+}
+
+.mail-index-container{
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+    margin: 10px;
+}
+
+.side-bar-container{
+    grid-column: 1;
+}
+
+.mail-list-container, .search-mail-bar {
+    grid-column: 2;
+}
+/* .search-mail-bar{
+    grid-column: 2;
+} */
+
+.side-bar-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.side-bar-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

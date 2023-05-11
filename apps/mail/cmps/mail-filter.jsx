@@ -25,10 +25,10 @@ export function MailFilter({ filterBy, onSetFilter }) {
 
             <form onSubmit={onSubmitFilter}>
                 <label htmlFor="txt">Read:</label>
-                <input value={txt} onChange={handleChange} name="txt" id="txt" type="text" placeholder="By read" />
+                <input value={txt} onChange={handleChange} name="txt" id="txt" type="text" placeholder="By Subject" />
 
                 <label htmlFor="unread">Unread:</label>
-                <input value={unread} onChange={handleChange} type="number" name="unread" id="unread" placeholder="By unread" />
+                <input value={unread} onChange={handleChange} type="checkbox" name="unread" id="unread" placeholder="By unread" />
 
                 <button>Filter Mails</button>
             </form>
