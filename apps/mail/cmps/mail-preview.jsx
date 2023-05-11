@@ -15,11 +15,11 @@ export function MailPreview({ mail, onRemoveMail }) {
     return (
         <Link to={`/mail/${mail.id}`}> 
         <div className="mail-preview">
-            <div clasName="mail-from-name">{mail.from.name}</div>
-            <div clasName="mail-subject">{mail.subject}</div>
-            <div clasName="mail-body"><LongTxt txt={mail.body} length={80}></LongTxt></div> 
+            <div className="mail-from-name">{mail.from.name}</div>
+            <div className="mail-subject">{mail.subject}</div>
+            <div className="mail-body"><LongTxt txt={mail.body} length={80}></LongTxt></div> 
             {/* <td><button onClick={() => onRemoveMail(mail.id)} >Delete</button></td> */}
-            <div clasName="mail-date"style={ fontStyle }>{sentAt}</div>
+            <div className="mail-date"style={ fontStyle }>{sentAt}</div>
         </div>
         </Link>
     )
