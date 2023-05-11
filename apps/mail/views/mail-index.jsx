@@ -55,7 +55,7 @@ export function MailIndex() {
             </ul>
         </div> */}
         <MailBar mails={mails} setIsCompose={setIsCompose} />
-        <MailList mails={mails} onRemoveMail={onRemoveMail} className="mail-list-container"/>
+        <MailList mails={mails} onRemoveMail={onRemoveMail}/>
        {isCompose && <MailCompose onClose={()=>{setIsCompose(false)}}/>}
 
     </div>
