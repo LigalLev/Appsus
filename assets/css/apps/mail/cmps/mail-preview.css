@@ -11,7 +11,7 @@
     height: 40px;
     position: relative;
     padding-left: 15px;
-
+/* text-align: left; */
 
 }
 
@@ -26,20 +26,17 @@
 
 }
 
-
 .mail-from-name {
     width: 100px;
 }
 
 .mail-body{
-    overflow: hidden;
-    position: relative;
-    width: 700px;
-}
-/* .mail-date {
-    width: 50px;
+   flex-flow: 1;
+} 
+ .mail-date {
+  text-align: right;
 
-} */
+}
 
 /* .mail-preview {
     display: grid;

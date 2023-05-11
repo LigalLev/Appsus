@@ -15,6 +15,7 @@ export function MailPreview({ mail, onRemoveMail }) {
     return (
         <Link to={`/mail/${mail.id}`}> 
         <div className="mail-preview">
+            {/* <img src="../../assets/img/importanc(2).png" alt="" /> */}
             <div className="mail-from-name"style={ fontStyle }>{mail.from.name}</div>
             <div className="mail-subject"style={ fontStyle }>{mail.subject}</div>
             <div className="mail-body"style={ fontStyle }><LongTxt txt={mail.body} length={80}></LongTxt></div> 

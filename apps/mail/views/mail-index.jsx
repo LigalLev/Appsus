@@ -7,6 +7,7 @@ import { showSuccessMsg, showErrorMsg } from "../../../services/event-bus.servic
 import { MailList } from "../cmps/mail-list.jsx"
 import { MailCompose } from '../cmps/mail-compose.jsx'
 import { MailBar } from '../cmps/mail-bar.jsx'
+import { MailHeader } from '../cmps/mail-header.jsx'
 
 export function MailIndex() {
     const [searchParams, setSearchParams] = useSearchParams()
