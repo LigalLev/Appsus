@@ -1,7 +1,6 @@
 
 const { useState } = React
 
-
 export function LongTxt({ txt, length }) {
 
     const [isOpen, setIsOpen] = useState(false)
