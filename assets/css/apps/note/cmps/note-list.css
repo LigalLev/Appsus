@@ -3,14 +3,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    align-items: flex-start;
+
     padding-inline: 0px;
-    
 }
 
 .note-item{
     display: block;
     width: 15em;
-    min-height: 28px;
+    height: auto;
 
     background-color: white;
     list-style: none;
