@@ -42,8 +42,8 @@ export function MailDetails() {
     return (
         <section className="mail-details">
             <h1> {mail.subject}</h1>
-            <h6>{mail.from}</h6>
-            <h6>{mail.to}</h6>
+            <h5>from: {mail.from.name}</h5>
+            <h5>to: {mail.to.name}</h5>
             <p>{mail.body}</p>
 
             <button onClick={onBack}>Back</button>

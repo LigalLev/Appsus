@@ -9,16 +9,19 @@ export function MailPreview({ mail, onRemoveMail }) {
         else if (!mail.isRead) return { fontWeight: 'bold' }
         else return ''
     }
+    const fontStyle =  getMailFontWeight()
 
+    const sentAt = mail.sentAt.split(',')[0]
     return (
-        <tr className="mail-preview">
-            <td style={ getMailFontWeight() }> <Link to={`/mail/${mail.id}`}> 
-            <div>{mail.from}</div>
-            <div>Subject: {mail.subject}</div>
-                <div>{mail.body}</div></Link> </td>
-
-            <td><button onClick={() => onRemoveMail(mail.id)} >Delete</button></td>
-            <td>{mail.sentAt}</td>
-        </tr>
+        <Link to={`/mail/${mail.id}`}> 
+        <div className="mail-preview">
+            
+            <div clasName="mail-from-name">{mail.from.name}</div>
+            <div clasName="mail-subjct" style={ fontStyle }>{mail.subject}</div>
+            <div clasName="mail-body"><LongTxt txt={mail.body} length={80}></LongTxt></div> 
+            {/* <td><button onClick={() => onRemoveMail(mail.id)} >Delete</button></td> */}
+            <div clasName="mail-date"style={ fontStyle }>{sentAt}</div>
+        </div>
+        </Link>
     )
 }
