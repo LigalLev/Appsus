@@ -10,15 +10,14 @@
 
 .mail-subject {
     /* justify-self: center; */
-    width: 400px;
-    background-color: blue;
-    border: solid 1px;
-    font-size: large;
+    width: 100px;
 }
 
 
 .mail-from-name {
-    width: 300px;
-    color: red;
-    font-size: large;
+    width: 100px;
+}
+
+.mail-date{
+    align-items: right;
 }
