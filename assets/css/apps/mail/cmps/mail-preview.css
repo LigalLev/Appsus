@@ -11,46 +11,43 @@
     height: 40px;
     position: relative;
     padding-left: 15px;
-/* text-align: left; */
+    /* text-align: left; */
 
 }
 
 .mail-preview:hover {
-   box-shadow: rgba(100, 121, 143, 0.12) 0px -1px 0px 0px inset;
-   scale:1.03;
-   
-}
-
-.mail-subject {
-    width: 250px;
+    box-shadow: rgba(100, 121, 143, 0.12) 0px -1px 0px 0px inset;
+    scale: 1.03;
 
 }
 
 .mail-from-name {
     width: 100px;
+    /* flex:1; */
 }
 
-.mail-body{
-   flex-flow: 1;
-} 
- .mail-date {
-  text-align: right;
+.mail-subject {
+    width: 250px;
+    /* flex:2; */
+}
+
+
+
+.mail-body {
+    width: 35em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 5;
+}
+
+.mail-date {
+    text-align: right;
+    flex: 1;
 
 }
 
-/* .mail-preview {
-    display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
-
+.trash-img {
+    height: 20px;
+    width: 20px;
 }
-.mail-subject{
-    grid-column:2;
-}
-.mail-from-name{
-    grid-column: 1;
-}
-
-.mail-date{
-grid-column: 4;   
-}
-
