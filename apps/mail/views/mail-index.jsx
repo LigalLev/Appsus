@@ -1,11 +1,12 @@
 
+const { useState, useEffect } = React
 const { Link, useSearchParams } = ReactRouterDOM
 
 import { mailService } from '../services/mail.service.js'
 import { showSuccessMsg, showErrorMsg } from "../../../services/event-bus.service.js"
 import { MailList } from "../cmps/mail-list.jsx"
 import { MailCompose } from '../cmps/mail-compose.jsx'
-const { useState, useEffect } = React
+import { MailBar } from '../cmps/mail-bar.jsx'
 
 export function MailIndex() {
     const [searchParams, setSearchParams] = useSearchParams()
@@ -16,6 +17,7 @@ export function MailIndex() {
         loadMails()
         setSearchParams(filterBy)
         showSuccessMsg('Welcome to Email index!')
+        console.log(':hekllll' )
     }, [])
 
     function loadMails() {
@@ -39,7 +41,7 @@ export function MailIndex() {
     }
 
     return <div className="mail-index-container">
-        <div className="search-mail-bar"><label htmlFor="search">Search:</label>
+        {/* <div className="search-mail-bar"><label htmlFor="search">Search:</label>
             <input type="text" name="search" id="search" /></div>
         <div className="side-bar-container">
             <button onClick={()=>{setIsCompose(true)}}><h2>compose</h2></button>
@@ -50,7 +52,8 @@ export function MailIndex() {
                 <li><button>Stared</button></li>
                 <li><button>Trash</button></li>
             </ul>
-        </div>
+        </div> */}
+        <MailBar mails={mails} setIsCompose={setIsCompose} />
         <MailList mails={mails} onRemoveMail={onRemoveMail} className="mail-list-container"/>
        {isCompose && <MailCompose onClose={()=>{setIsCompose(false)}}/>}
 

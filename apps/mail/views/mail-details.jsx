@@ -24,8 +24,9 @@ export function MailDetails() {
 
     function markMailAsRead() {
         let updatedMail = { ...mail, isRead: true }
+        console.log(updatedMail,'lkn' )
         mailService.save(updatedMail)
-            .then(setMail)
+            .then()
             .catch(err => {
                 console.log('error has accured:', err);
                 navigate('/mail')

@@ -162,6 +162,7 @@ function _createMails() {
           
         ]
         storageService.saveToStorage(MAIL_KEY, mails)
+        console.log('mails:', mails)
         return mails
     }
 }

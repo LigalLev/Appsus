@@ -13,6 +13,7 @@ export function MailPreview({ mail, onRemoveMail }) {
     return (
         <tr className="mail-preview">
             <td style={ getMailFontWeight() }> <Link to={`/mail/${mail.id}`}> 
+            <div>{mail.from}</div>
             <div>Subject: {mail.subject}</div>
                 <div>{mail.body}</div></Link> </td>
 
