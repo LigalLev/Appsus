@@ -1,0 +1,24 @@
+.mail-preview {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin-left: 50px;
+    
+    
+}
+
+.mail-subject {
+    /* justify-self: center; */
+    width: 400px;
+    background-color: blue;
+    border: solid 1px;
+    font-size: large;
+}
+
+
+.mail-from-name {
+    width: 300px;
+    color: red;
+    font-size: large;
+}

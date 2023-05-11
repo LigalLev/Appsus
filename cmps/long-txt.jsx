@@ -13,10 +13,10 @@ export function LongTxt({ txt, length }) {
     return (
         <section>
             <p> {cutTxtByLength()} </p>
-            {txt.length > length &&
+            {/* {txt.length > length &&
                 <button onClick={() => setIsOpen(isOpen => !isOpen)}>
                     {isOpen ? 'Read Less' : 'Read More'}
-                </button>}
+                </button>} */}
         </section>
     )
 }

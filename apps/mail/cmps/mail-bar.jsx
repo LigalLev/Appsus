@@ -7,7 +7,7 @@ export function MailBar(props) {
          }).length
      }
 
-    return <section>
+    return <section >
         <div className="search-mail-bar"><label htmlFor="search">Search:</label>
             <input type="text" name="search" id="search" /></div>
         <div className="side-bar-container">
