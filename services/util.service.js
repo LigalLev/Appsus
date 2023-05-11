@@ -16,7 +16,6 @@ function makeId(length = 6) {
     for (var i = 0; i < length; i++) {
         txt += possible.charAt(Math.floor(Math.random() * possible.length))
     }
-
     return txt
 }
 
@@ -54,7 +53,6 @@ function getDayName(date, locale) {
     return date.toLocaleDateString(locale, { weekday: 'long' })
 }
 
-
 function getMonthName(date) {
     const monthNames = ["January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
@@ -64,7 +62,5 @@ function getMonthName(date) {
 
 function getTimeStamp(date){
     date = new Date()
-    // var timestamp = date.getTime(date)
-    // console.log('timestamp:', timestamp)
     return date.getTime()
 }

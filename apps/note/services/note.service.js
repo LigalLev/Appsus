@@ -12,7 +12,6 @@ export const noteService = {
     save,
     getEmptyNote,
     // getDefaultFilter,
-    // getNextCarId
 }
 
 function query(filterBy = {}) {
@@ -42,9 +41,9 @@ function remove(noteId) {
 
 function save(note) {
     if (note.id) {
-        return asyncStorageService.put(NOTE_KEY, car)
+        return asyncStorageService.put(NOTE_KEY, note)
     } else {
-        return asyncStorageService.post(NOTE_KEY, car)
+        return asyncStorageService.post(NOTE_KEY, note)
     }
 }
 
@@ -109,14 +108,14 @@ function _createNotes() {
 function getEmptyNote(type = '', isPinned = false) {
     return {
         id: '',
-        createdAt,
+        createdAt: new Date(),
         type,
         isPinned,
         style: {
             backgroundColor: '#00d'
         },
         info: {
-            txt: 'Fullstack Me Baby!'
+            txt: ''
         }
     }
 }
